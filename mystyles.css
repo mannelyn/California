@@ -3,7 +3,12 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(230, 251, 255, 1) 0%,
+    rgba(124, 178, 187, 1) 48%,
+    rgba(88, 135, 143, 1) 100%
+  );
   font-family: "Inter", sans-serif, Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -26,31 +31,32 @@ header {
 
 header > a {
   font-size: 1.5rem;
+  font-weight: bold;
   margin: 0.5rem;
   color: white;
 }
 
-.nav-links {
+#nav-links {
   display: flex;
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-.nav-links li a {
+#nav-links li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 1rem;
   display: block;
 }
 
-.nav-links li:hover {
+#nav-links li:hover {
   background-color: rgb(69, 111, 128);
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease;
 }
 
-/* css for home page */
+/* css for index page */
 
 .main-page {
   position: relative;
@@ -70,6 +76,7 @@ header > a {
 
 .ca-container {
   position: absolute;
+  float: left;
   background-color: rgba(255, 255, 255, 0.7);
   display: flex;
   justify-content: center;
@@ -105,7 +112,7 @@ header > a {
 
 a {
   text-decoration: none;
-  color: rgb(31, 31, 31);
+  color: rgb(26, 26, 26);
 }
 
 .button-6 {
@@ -160,6 +167,7 @@ a {
 /* css for 'aside' on index page */
 
 .aside-content {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,8 +175,8 @@ a {
 }
 
 .index-aside {
+  position: relative;
   height: 38rem;
-  background: rgb(230, 251, 255);
   background: linear-gradient(
     0deg,
     rgba(230, 251, 255, 1) 0%,
@@ -190,6 +198,7 @@ a {
 }
 
 .aside-img-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -228,7 +237,87 @@ a {
   object-fit: cover;
 }
 
-/* css for cities page */
+/* css for cities page // redo */
+
+.cities-page {
+  position: relative;
+  color: white;
+  height: 40rem;
+  width: 100%;
+}
+
+.cities-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -14.5%;
+  height: 0%;
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
+
+.citiespage-img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cities-container-txt {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  top: 0;
+  color: rgb(0, 0, 0);
+}
+
+.cities-container-txt > h1 {
+  color: #5a8992;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.cities-img-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.city-inner-img {
+  width: 100%;
+  height: 100%;
+}
+
+.cities-img-container a {
+  font-size: 25px;
+  color: rgb(23, 23, 23);
+  margin-bottom: -20px;
+}
+
+.city-white-space {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+  height: 28em;
+  width: 25em;
+  padding: 20px;
+  margin: 20px 30px;
+  border: 1px rgb(206, 206, 206) solid;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+/* 3 different cities */
+
+/* 
 
 .three-cities {
   color: white;
@@ -271,4 +360,18 @@ a {
 .img-sanfrancisco {
   margin: 0px 60px;
   margin-bottom: 20px;
+}
+
+*/
+
+/* footer */
+
+#footer {
+  background-color: #335360;
+  color: white;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
