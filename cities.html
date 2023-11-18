@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mystyles.css" />
-    <title>Task 1 Draft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
+
     <!-- header + nav bar -->
-    <header>
+    <header id="header-nav">
       <a href="index.html">CALIFORNIA</a>
       <nav id="navbar">
         <ul id="nav-links">
@@ -22,8 +29,8 @@
 
     <!-- cities page -->
 
-    <section class="cities-page">
-      <img class="citiespage-img" src="img/cities-img.jpg" / alt="Image of ocean
+    <section class="cities">
+      <img class="citiespage-img" src="img/cities/cities-img.jpg" / alt="Image of ocean
       view">
       <div class="cities-container">
         <div class="cities-container-txt">
@@ -32,59 +39,111 @@
 
         <!-- Individual city links -->
 
-        <div class="cities-img-container">
-          <div class="city-white-space">
-            <div class="city-inner-img">
-              <a href="#"><img
-                src="img/sacramento.jpg"
-                class="homepage-images"
-                alt="Sacramento"
-              />
+        <a href="#"">
+          <div class="city-img-container">
+            <div class="city-white-space">
+              <div class="city-inner-img">
+                <img
+                  src="img/cities/sacramento.jpg"
+                  class="cities-images"
+                  alt="Sacramento"
+                />
+              </div>
+              <p>Sacramento</p>
             </div>
-            <p>Sacramento</p></a>
           </div>
-          <div class="city-white-space">
-            <div class="city-inner-img">
-              <img
-                src="img/sf.jpg"
-                class="homepage-images"
-                alt="San Francisco"
-              />
+        </a>
+
+        <a href="#">
+          <div class="city-img-container">
+            <div class="city-white-space">
+              <div class="city-inner-img">
+                <img
+                  src="img/cities/sf.jpg"
+                  class="cities-images"
+                  alt="San Francisco"
+                />
+              </div>
+              <p>San Francisco</p>
             </div>
-            <p>San Francisco</p>
           </div>
-          <div class="city-white-space">
-            <div class="city-inner-img">
-              <img src="img/sd.jpg" class="homepage-images" alt="San Diego" />
+        </a>
+
+        <a href="#">
+          <div class="city-img-container">
+            <div class="city-white-space">
+              <div class="city-inner-img">
+                <img src="img/cities/sd.jpg" class="cities-images" alt="San Diego" />
+              </div>
+              <p>San Diego</p>
             </div>
-            <p>San Diego</p>
           </div>
-        </div>
+        </a>
+    </section>
+
+    <!-- aside -->
+
+    <aside class="cities-aside-container">
+      <div class="h4-element-cities"><h4>Fun Facts about California:</h4>
       </div>
-    </section>
-
-    <!-- undefined -->
-
-    <!--
-    <section class="three-cities">
-      <main class="three-cities-photos">
-        <div>
-          <div class="img-sacramento">Image placeholder</div>
-          <h4>Sacramento</h4>
-        </div>
-        <div>
-          <div class="img-sanfrancisco">Image placeholder</div>
-          <h4>San Francisco</h4>
-        </div>
-        <div>
-          <div class="img-sandiego">Image placeholder</div>
-          <h4>San Diego</h4>
-        </div>
-      </main>
-    </section>
--->
-    <aside>
-      <div>Place holder for 'aside'</div>
+      <div id="fun-facts">
+        <ul class="list">
+          <li><p>The Hollywood Bowl (located in Los Angeles, CA) is the largest outdoor amphitheater in the United States</p></li>
+          <li><p>California is the most populous state in the US with a population total of 38 million</p></li>
+          <li><p>San Francisco's cable cars were named the first moving National Historic Landmark</p></li>
+        </ul>
+      </div>
     </aside>
+
+
+<!-- section for table -->
+
+<div class="annual-visitors-element">Annual Tourism</div>
+<div class="table-container">
+
+  <div class="side-img">
+    <img class="city-inner-img" id="white-border" src="img/cities/sf-ocean.jpg"/>
+  </div>
+  
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Cities</th>
+                <th>Annual Visitors</th>
+                <th>Visitor Spending</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sacramento</strong></td>
+                <td>15.3 Million</td>
+                <td>$4 billion</td>
+            </tr>
+            <tr>
+                <td><strong>San Francisco</strong></td>
+                <td>21.9 Million</td>
+                <td>$7.4 billion</td>
+            </tr>
+            <tr>
+                <td><strong>San Diego</strong></td>
+                <td>29 Million</td>
+                <td>$14.3 billion</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="side-img">
+      <img class="city-inner-img" id="white-border"  src="img/cities/street.jpg"/>
+    </div>
+</div>
+</div>
+
+    <!-- footer -->
+
+    <footer>
+      <div id="footer">
+        <p>&copy; 2023</p>
+      </div>
+    </footer>
+
   </body>
 </html>
