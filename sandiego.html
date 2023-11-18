@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mystyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <title>California</title>
+  </head>
+  <body>
+    <!-- header + nav bar -->
+    <header id="header-nav">
+      <a href="index.html">CALIFORNIA</a>
+      <nav id="navbar">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <div class="city-dropdown">
+              <a href="cities.html" class="drop">Cities</a>
+              <div class="dropdown-content">
+                <a href="sacramento.html">Sacramento</a>
+                <a href="sanfrancisco.html">San Francisco</a>
+                <a href="sandiego.html">San Diego</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <section class="index-main-container">
+      <img class="index-main-container-bg" src="img/cities/sd-bg.jpg" /
+      alt="Image of San Francisco">
+      <div class="indivial-city-container">
+        <div class="city-container-txt">
+          <h1>San Diego</h1>
+          <p>
+            San Diego, located in Southern California, is the eighth-most
+            populous city in the United States and the second-most populous city
+            in California. San Diego is the second largest city in California
+            and is known for it's beautiful beaches.
+          </p>
+          <button class="button-2" role="button">
+            <a href="https://en.wikipedia.org/wiki/San_Diego" target="_blank"
+              >More information</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- aside-->
+
+    <div class="stats-element">City Statistics</div>
+
+    <aside>
+      <div class="city-stats-container">
+        <div id="double-line-element"><img src="img/line-border.png" /></div>
+        <div class="city-stats">
+          <ol>
+            <li>Population</li>
+            <ul type="disk">
+              <li>1.38 Million</li>
+            </ul>
+            <li>Year incorporated</li>
+            <ul type="disk">
+              <li>1850</li>
+            </ul>
+            <li>Region</li>
+            <ul type="disk">
+              <li>Southern California</li>
+            </ul>
+            <li>Classification</li>
+            <ul type="disk">
+              <li>Urban/Rural</li>
+            </ul>
+            <li>Median income</li>
+            <ul type="disk">
+              <li><strong>City</strong>: 38,503 USD</li>
+              <li><strong>State</strong>: 33, 719 USD</li>
+            </ul>
+          </ol>
+        </div>
+
+        <div class="side-city-img-container">
+          <img
+            src="img/cities/sd.jpg"
+            class="city-inner-img"
+            alt="Image of San Diego beach"
+          />
+        </div>
+
+        <div class="side-city-img-container">
+          <img
+            src="img/cities/sd-2.jpg"
+            class="city-inner-img"
+            alt="Image of San Diego pier on beach"
+          />
+        </div>
+      </div>
+    </aside>
+
+    <!-- footer -->
+
+    <footer>
+      <div id="footer">
+        <p>&copy; 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
