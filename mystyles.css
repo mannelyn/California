@@ -461,7 +461,7 @@ a {
   padding: 0;
 }
 
-/* table */
+/* cities page - table */
 
 .annual-visitors-element {
   background-color: #1d3e4b;
@@ -530,7 +530,7 @@ a {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-/* ------- sacramento page ------- */
+/* ------- indv city pages ------- */
 
 .indivial-city-container {
   position: absolute;
@@ -560,7 +560,7 @@ a {
   margin-top: -70px;
 }
 
-/* city stats container - reusable */
+/* city stats container for city pages - reusable */
 
 .stats-element {
   background-color: #1d3e4b;
@@ -615,6 +615,10 @@ a {
 
 .city-stats-container li {
   padding: 5px;
+}
+
+ul {
+  list-style-type: circle;
 }
 
 /* ------- contact page ------- */
@@ -716,8 +720,8 @@ input[type="button"]:hover {
   align-items: center;
 }
 
-/* extra */
+/* extra / resuable elements */
 
-#white-border {
+.white-border {
   border: solid white 3px;
 }
