@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mystyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- header + nav bar -->
+    <header id="header-nav">
+      <a href="index.html">CALIFORNIA</a>
+      <nav id="navbar">
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <div class="city-dropdown">
+              <a href="cities.html" class="drop">Cities</a>
+              <div class="dropdown-content">
+                <a href="sacramento.html">Sacramento</a>
+                <a href="sanfrancisco.html">San Francisco</a>
+                <a href="sandiego.html">San Diego</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+
+    <div class="contact-container-txt">
+      <h1>Contact</h1>
+    </div>
+
+    <div id="contact-page-container">
+      <form>
+        <label for="firstname">First Name</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Enter First Name"
+        />
+
+        <label for="lastname">Last Name</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Enter Last Name"
+        />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email" />
+
+        <label for="cnfrm-email">Confirm Email</label>
+        <input type="email" id="cnfrm-email" placeholder="Confirm Email" />
+        <p id="message"></p>
+
+        <label for="question">Message</label>
+        <textarea
+          name="question"
+          id="question"
+          placeholder="Type your message here..."
+        ></textarea>
+
+        <input type="button" onclick="checkEmail()" value="SUBMIT" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- aside -->
+    <aside></aside>
+
+    <!-- footer -->
+
+    <footer>
+      <div id="footer">
+        <p>&copy; 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
