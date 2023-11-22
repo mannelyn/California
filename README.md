@@ -1,3 +1,3 @@
 # California
-- Project for D277: Front-End Web Development at WGU
+- Project for D277: Front-End Web Development
 - WIP
